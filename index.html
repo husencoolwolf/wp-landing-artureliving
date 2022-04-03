@@ -125,7 +125,10 @@
       height: 100vh;
       width: 100%;
     }
+
+
   </style>
+  <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 
@@ -208,8 +211,8 @@
       </div>
 
     </div>
-    <div class="col-md-7 shadow-lg bg-white rounded">
-      <div class="container mx-2">
+    <div class="col-md-7 shadow-lg bg-secondary rounded">
+      <div class="container mx-2 text-white">
         <h2 class="title"><strong>Kenapa Harus Kami?</strong></h2>
         <h2 class="subtitle">ARTURE MEMILIKI 3 KEUTAMAAN :</h2>
         <div class="garis-kuning"></div>
@@ -240,7 +243,7 @@
 
   <!-- Jasa -->
   <div class="row w-100 mx-0">
-    <div class="col-md-7 shadow-lg bg-white rounded">
+    <div class="col-md-7 bg-white rounded">
       <div class="container mx-2">
         <h2 class="title"><strong>Apa yang kami tawarkan?</strong></h2>
         <h2 class="subtitle">ARTURE MEMILIKI PENGALAMAN PADA :</h2>
@@ -278,32 +281,112 @@
 
   <!-- projects -->
   <div class="row mx-0">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-          aria-controls="pills-home" aria-selected="true">Home</a>
+    <!-- tab jasa-jasa -->
+    <ul class="nav nav-pills navbar-custom my-3 py-2 mx-auto border-bottom border-dark" id="pills-tab" role="tablist">
+      <li class="nav-item border-right border-dark">
+        <a class="nav-link active" id="pills-furniture-tab" data-toggle="pill" href="#pills-furniture" role="tab" aria-controls="pills-furniture" aria-selected="true">FURNITURE</a>
+      </li>
+      <li class="nav-item border-right border-dark">
+        <a class="nav-link" id="pills-eksterior-tab" data-toggle="pill" href="#pills-eksterior" role="tab" aria-controls="pills-eksterior" aria-selected="false">EKSTERIOR</a>
+      </li>
+      <li class="nav-item border-right border-dark">
+        <a class="nav-link" id="pills-konstruksi-tab" data-toggle="pill" href="#pills-konstruksi" role="tab" aria-controls="pills-konstruksi" aria-selected="false">KONSTRUKSI</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-          aria-controls="pills-profile" aria-selected="false">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-          aria-controls="pills-contact" aria-selected="false">Contact</a>
+        <a class="nav-link" id="pills-interior-tab" data-toggle="pill" href="#pills-interior" role="tab" aria-controls="pills-interior" aria-selected="false">INTERIOR</a>
       </li>
     </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div w3-include-html="test.html"></div> 
+    <div class="tab-content" id="pills-tabFurniture">
+      <div class="tab-pane fade show active" id="pills-furniture" role="tabpanel" aria-labelledby="pills-furniture-tab">
+        <!-- tab furniture -->
+        <div class="row">
+          <ul class="nav nav-pills my-3 mx-auto" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-kitchen-set-tab" data-toggle="pill" href="#pills-kitchen-set" role="tab"
+                aria-controls="pills-kitchen-set" aria-selected="true">Kitchen Set</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-wardrobe-tab" data-toggle="pill" href="#pills-wardrobe" role="tab"
+                aria-controls="pills-wardrobe" aria-selected="true">Wardrobe</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabFurnitureContent">
+            <div class="tab-pane fade show active" id="pills-kitchen-set" role="tabpanel" aria-labelledby="pills-kitchen-set-tab">
+              <div w3-include-html="part/product-shower/furniture/kitchen-set.html"></div> 
+            </div>
+            <div class="tab-pane fade show" id="pills-wardrobe" role="tabpanel" aria-labelledby="pills-wardrobe-tab">
+              <div w3-include-html="part/product-shower/furniture/wardrobe.html"></div> 
+            </div>
+          </div>
+        </div>
+        <!-- end of tab furniture -->
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        Dua
-      </div>
+      <div class="tab-pane fade" id="pills-eksterior" role="tabpanel" aria-labelledby="pills-eksterior-tab">
+        <!-- tab eksterior -->
 
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-        Tiga
+        <!-- end of tab eksterior -->
+      </div>
+      <div class="tab-pane fade" id="pills-konstruksi" role="tabpanel" aria-labelledby="pills-konstruksi-tab">
+        <!-- tab konstruksi -->
+
+        <!-- end of tab konstruksi -->
+      </div>
+      <div class="tab-pane fade" id="pills-interior" role="tabpanel" aria-labelledby="pills-interior-tab">
+        <!-- tab interior -->
+        <div class="row">
+          <ul class="nav nav-pills my-3 mx-auto" id="pills-tabInterior" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-minimal-tab" data-toggle="pill" href="#pills-minimal" role="tab"
+                aria-controls="pills-minimal" aria-selected="true">Minimal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-modern-classic-tab" data-toggle="pill" href="#pills-modern-classic" role="tab"
+                aria-controls="pills-modern-classic" aria-selected="false">ModernClassic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-industry-tab" data-toggle="pill" href="#pills-industry" role="tab"
+                aria-controls="pills-industry" aria-selected="false">Industrial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-cafe-tab" data-toggle="pill" href="#pills-cafe" role="tab"
+                aria-controls="pills-cafe" aria-selected="false">Cafe/Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-mezzanine-tab" data-toggle="pill" href="#pills-mezzanine" role="tab"
+                aria-controls="pills-mezzanine" aria-selected="false">Mezzanine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab"
+                aria-controls="pills-office" aria-selected="false">Office</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-minimal" role="tabpanel" aria-labelledby="pills-minimal-tab">
+              <div w3-include-html="part/product-shower/design interior/minimal-project.html"></div> 
+            </div>
+            <div class="tab-pane fade" id="pills-modern-classic" role="tabpanel" aria-labelledby="pills-modern-classic-tab">
+              <div w3-include-html="part/product-shower/design interior/modern-classic-project.html"></div> 
+            </div>
+            <div class="tab-pane fade" id="pills-industry" role="tabpanel" aria-labelledby="pills-industry-tab">
+              <div w3-include-html="part/product-shower/design interior/industrial-project.html"></div> 
+            </div>
+            <div class="tab-pane fade" id="pills-cafe" role="tabpanel" aria-labelledby="pills-cafe-tab">
+              <div w3-include-html="part/product-shower/design interior/cafe-bar-project.html"></div> 
+            </div>
+            <div class="tab-pane fade" id="pills-mezzanine" role="tabpanel" aria-labelledby="pills-mezzanine-tab">
+              <div w3-include-html="part/product-shower/design interior/mezzanine-project.html"></div> 
+            </div>
+            <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
+              <div w3-include-html="part/product-shower/design interior/office-project.html"></div> 
+            </div>
+          </div>
+        </div>
+        <!-- end of tab interior -->
       </div>
     </div>
+    <!-- end of tab jasa-jasa -->
+    <!-- batas -->
+    
   </div>
 
 
