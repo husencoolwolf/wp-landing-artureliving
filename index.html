@@ -122,7 +122,7 @@
     }
 
     .carousel {
-      height: 100vh;
+      height: 100%;
       width: 100%;
     }
 
@@ -282,7 +282,7 @@
   <!-- projects -->
   <div class="row mx-0">
     <!-- tab jasa-jasa -->
-    <ul class="nav nav-pills navbar-custom my-3 py-2 mx-auto border-bottom border-dark" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills navbar-custom my-3 py-2 mx-auto justify-content-center border-bottom border-dark" id="pills-tab" role="tablist">
       <li class="nav-item border-right border-dark">
         <a class="nav-link active" id="pills-furniture-tab" data-toggle="pill" href="#pills-furniture" role="tab" aria-controls="pills-furniture" aria-selected="true">FURNITURE</a>
       </li>
@@ -334,32 +334,33 @@
       <div class="tab-pane fade" id="pills-interior" role="tabpanel" aria-labelledby="pills-interior-tab">
         <!-- tab interior -->
         <div class="row">
-          <ul class="nav nav-pills my-3 mx-auto" id="pills-tabInterior" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-minimal-tab" data-toggle="pill" href="#pills-minimal" role="tab"
-                aria-controls="pills-minimal" aria-selected="true">Minimal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-modern-classic-tab" data-toggle="pill" href="#pills-modern-classic" role="tab"
-                aria-controls="pills-modern-classic" aria-selected="false">ModernClassic</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-industry-tab" data-toggle="pill" href="#pills-industry" role="tab"
-                aria-controls="pills-industry" aria-selected="false">Industrial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-cafe-tab" data-toggle="pill" href="#pills-cafe" role="tab"
-                aria-controls="pills-cafe" aria-selected="false">Cafe/Bar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-mezzanine-tab" data-toggle="pill" href="#pills-mezzanine" role="tab"
-                aria-controls="pills-mezzanine" aria-selected="false">Mezzanine</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab"
-                aria-controls="pills-office" aria-selected="false">Office</a>
-            </li>
-          </ul>
+            <ul class="nav nav-pills my-3 justify-content-center mx-auto" id="pills-tabInterior" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-minimal-tab" data-toggle="pill" href="#pills-minimal" role="tab"
+                  aria-controls="pills-minimal" aria-selected="true">Minimal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-modern-classic-tab" data-toggle="pill" href="#pills-modern-classic" role="tab"
+                  aria-controls="pills-modern-classic" aria-selected="false">ModernClassic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-industry-tab" data-toggle="pill" href="#pills-industry" role="tab"
+                  aria-controls="pills-industry" aria-selected="false">Industrial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-cafe-tab" data-toggle="pill" href="#pills-cafe" role="tab"
+                  aria-controls="pills-cafe" aria-selected="false">Cafe/Bar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-mezzanine-tab" data-toggle="pill" href="#pills-mezzanine" role="tab"
+                  aria-controls="pills-mezzanine" aria-selected="false">Mezzanine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab"
+                  aria-controls="pills-office" aria-selected="false">Office</a>
+              </li>
+            </ul>
+          
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-minimal" role="tabpanel" aria-labelledby="pills-minimal-tab">
               <div w3-include-html="part/product-shower/design interior/minimal-project.html"></div> 

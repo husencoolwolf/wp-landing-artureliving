@@ -22,3 +22,12 @@
       color: pink;
       background-color: green;
   } */
+
+@media only screen 
+and (max-width : 520px) {
+/* Styles */
+  .carousel-inner img {
+    width: auto;
+    height: 50vh;
+  }
+}
