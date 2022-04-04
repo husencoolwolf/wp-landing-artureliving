@@ -34,8 +34,21 @@ html,body
   font-size: 18px;
 }
 
-#daftarHarga .col-4 ul{
+#daftarHarga .col-8 table tbody tr td ul{
   margin-bottom: 0;
+}
+
+.border-right.border-info-costum {
+  border-width: 10px !important;
+  border-color: #f0cf18 !important;
+}
+
+.bg-contact {
+  background-image: url("assets/");
+}
+
+.link-statis{
+  color: black;
 }
 
 
@@ -54,5 +67,15 @@ and (max-width : 520px) {
   .carousel-inner img {
     width: auto;
     height: 50vh;
+  }
+
+  #daftarHarga .col-8 table tbody tr td p, 
+  #daftarHarga .sideTable .sideTableContent p {
+  font-size: 12px;
+  }
+
+  #daftarHarga .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
