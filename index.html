@@ -22,6 +22,7 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
   <script src="dist/js/importHTML.js"></script>
+  <script src="dist/js/waGenerate.js"></script>
   <style>
     .logo {
       width: 200px;
@@ -133,18 +134,24 @@
 
 
 <body>
+  <!-- wa button -->
+  <a href="https://api.whatsapp.com/send?phone=6287888525264&text=Hai%20min,%20">
+    <img src="https://hantamo.com/free/whatsapp.svg" class="wabutton" alt="Whatsapp-Button" />
+  </a>
+
+
   <!-- jumbotron -->
   <div class="background full-bg d-flex align-items-center justify-content-center cafe">
     <div class="container">
       <div class="row mx-5">
         <div class="col-lg-5">
-          <div class="d-flex h-100 align-items-center justify-content-center">
+          <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-end">
             <img class="logo" src="assets/Logo-transparent.png" alt="">
           </div>
         </div>
         <div class="col-md-5">
-          <div class="d-flex h-100 align-items-center justify-content-center">
-            <h1 class="text-lg-left text-center">ARTURE FURNITURE</h1>
+          <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start">
+            <h1 class="text-lg-left text-center">ARTURE LIVING</h1>
           </div>
         </div>
       </div>
@@ -169,7 +176,7 @@
     <div class="col-md-7 shadow-lg bg-white rounded">
       <div class="container mx-2">
         <h2 class="title"><strong>Tentang Perusahaan</strong></h2>
-        <h2 class="subtitle"><strong>Arture (Art</strong> in <strong>Furniture)</strong></h2>
+        <h2 class="subtitle"><strong>Arture (Art</strong> in <strong>Living)</strong></h2>
         <div class="garis-kuning"></div>
         <br><br>
         <p class="text-justify">Kami memulai usaha ini sejak tahun 2015, kami bergerak
@@ -667,15 +674,55 @@
       </div>
     </div>
   </div>
-
-
-
-  <div class=""></div>
+  <div class="row bg-arture-gelap py-5 px-3">
+    <div class="col-lg-6 mb-5">
+      <div class="container">
+        <h2>Mari Diskusikan Proyek Anda</h2>
+        <p>Silahkan mengisi form untuk menceritakan proyek yang akan anda kerjakan melalui media WhatsApp</p>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="container">
+        <form id="planwithus">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" class="form-control" name="nama" id="nama" placeholder="Kenalan yuk siapa nama anda?">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Masukkan Alamat Email">
+          </div>
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Alamat Anda">
+          </div>
+          <div class="form-group">
+            <label for="alamat">Pesan</label>
+            <textarea class="form-control" name="pesan" id="pesan" cols="30" rows="10" placeholder="Ceritakan perencanaan rumah anda disini"></textarea>
+          </div>  
+  
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
 
 
 </body>
 <script>
   includeHTML();
+
+  $('#planwithus').submit(function(){
+    event.preventDefault();
+    var inputs = $('#planwithus :input');
+    var values = {};
+    inputs.each(function() {
+        values[this.name] = $(this).val();
+    });
+    console.log(kirimWA(6287888525264, values["nama"], values["email"], values["alamat"],values["pesan"]));
+    // window.location.href = kirimWA(6287888525264, values["nama"], values["email"], values["alamat"],values["pesan"]);
+  });
 </script>
 
 </html>
