@@ -13,12 +13,13 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background-color: rgba(255, 255, 255, 0);
   z-index: 1001;
 }
 
 .bg-arture-gelap{
-  background-color: #3d382b;
-  color: white;
+  background-color: #e7e7e7;
+  /* color: white; */
 }
 
 .navbar-nav .nav-link {
@@ -27,15 +28,16 @@ body {
 
 .navbar-custom .nav-item .nav-link {
   /* color: pink ; */
-  background-color: white;
+  /* background-color: white; */
   color: black;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .navbar-custom .nav-item .nav-link.active {
   background-color: black;
   color: white;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  
 }
 
 .full-layar-img img {
@@ -65,7 +67,9 @@ body {
   color: black;
 }
 
-
+.bg-footer {
+  background-color: #e0e0e0;
+}
 
 /* change the color of active or hovered links */
 /* .navbar-custom .nav-item.active .nav-link.active,
